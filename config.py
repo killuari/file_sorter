@@ -28,7 +28,7 @@ def create_default_config():
     config['extensions'] = {
         'documents': '.doc, .docx, .odt, .pdf, .xls, .xlsx, .ppt, .pptx',
         'images': '.jpg, .jpeg, .jif, .jfif, .png, .gif, .webp, .tiff, .tif, .psd, .raw, .arw, .bmp, .dib, .ind, .jp2, .jpf, .svg',
-        'videos': '.webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .mp4, .mp4v, .avi, .wmv, .mov, .qt, .flv, .swf',
+        'videos': '.webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .mp4, .mp4v, .avi, .wmv, .mov, .qt, .flv, .swf, .MTS',
         'audios': '.m4a, .flac, .mp3, .wav, .wma, .aac',
         'executables': '.exe',
         'archives': '.zip, .rar',
@@ -63,3 +63,6 @@ def load_folders(type=None):
 
 def get_sorting_path():
     return config.get('paths', 'sorting_path')
+
+def get_downloads_path():
+    return config.get('paths', 'downloads_path')

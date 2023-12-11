@@ -1,5 +1,5 @@
-import config
 import os
+import config
 
 config.create_default_config()
 
